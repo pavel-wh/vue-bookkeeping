@@ -1,0 +1,15 @@
+{
+  "name": "vue-bookkeeping",
+  "short_name": "vue-bookkeeping",
+  "icons": [
+    {
+      "src": "./img/icons/android-chrome-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#757575",
+  "theme_color": "#2196f3"
+}
