@@ -2,7 +2,7 @@
   <div>
     <div class="page-title">
       <h3>{{'Menu_Planning'|localize}}</h3>
-      <h4>{{info.bill | currency('RUB')}}</h4>
+      <h4>{{ 'Bill' | localize }} {{info.bill | currency('RUB')}}</h4>
     </div>
 
     <Loader v-if="loading" />
@@ -18,7 +18,7 @@
           <strong>{{cat.title}}:</strong>
           {{cat.spend | currency}} {{'Of'|localize}} {{cat.limit | currency}}
         </p>
-        <div class="progress" v-tooltip.noloc="cat.tooltip">
+        <div class="progress" v-tooltip.noloc="{ html: cat.tooltip, position: 'top' }">
           <div
             class="determinate"
             :class="[cat.progressColor]"

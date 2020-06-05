@@ -2,6 +2,7 @@ import localizeFilter from '@/filters/localize.filter'
 
 export default {
   bind(el, options) {
+    console.log(options)
     M.Tooltip.init(el, {
       html: options.modifiers.noloc
         ? options.value.html
