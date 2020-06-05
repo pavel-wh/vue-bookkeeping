@@ -5,6 +5,7 @@
     </div>
 
     <div class="history-chart">
+      <h6 class="center-align">{{'CostsForCategories'|localize}}</h6>
       <canvas ref="canvas"></canvas>
     </div>
 
@@ -121,7 +122,4 @@ export default {
 </script>
 
 <style scoped>
-.history-chart {
-	margin: 0 0.75rem;
-}
 </style>
