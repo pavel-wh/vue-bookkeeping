@@ -50,11 +50,11 @@ import localizeFilter from '@/filters/localize.filter'
 export default {
 	data: () => ({
 		title: '',
-		limit: 100
+		limit: 0
 	}),
 	validations: {
 		title: { required },
-		limit: { minValue: minValue(100) }
+		limit: { minValue: minValue(0) }
 	},
 	mounted() {
 		M.updateTextFields()
