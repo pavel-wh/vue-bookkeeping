@@ -18,7 +18,8 @@ export default {
           .database()
           .ref(`/users/${uid}/info`)
           .set({
-            bill: 10000,
+            bill: 0,
+            locale: 'ru-RU',
             name
           })
       } catch (e) {
