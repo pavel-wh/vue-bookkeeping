@@ -4,7 +4,7 @@
       <div class="card-content white-text">
         <span class="card-title">{{ 'BillInCurrency' | localize }}</span>
 
-        <p v-for="cur of currencies" :key="cur" class="currency-line">
+        <p v-for="(cur, idx) of currencies" :key="idx" class="currency-line">
           <span>{{ getCurrency(cur) | currency(cur) }}</span>
         </p>
       </div>
@@ -22,7 +22,7 @@ export default {
 		base() {
 			return (
 				this.$store.getters.info.bill /
-				(this.rates['RUB'] / this.rates['EUR'])
+				(this.rates['RUB'] / this.rates['USD'])
 			)
 		}
 	},
