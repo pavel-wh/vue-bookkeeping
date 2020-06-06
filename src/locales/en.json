@@ -57,6 +57,7 @@
   "HasAccount": "Has account?",
   "Register": "Register",
   "AcceptRules": "Agree with rules",
+  "MessageAcceptRules": "Accept rules...",
   "CreateNewRecord": "Create new record",
   "Logout": "You have logged out",
   "FirstLogin": "First login",

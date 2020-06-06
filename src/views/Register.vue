@@ -60,8 +60,14 @@
       <p>
         <label>
           <input type="checkbox" v-model="agree" />
+          <span>{{$v.agree}}</span>
           <span>{{ 'AcceptRules' | localize }}</span>
         </label>
+        <br />
+        <small
+          class="helper-text invalid"
+          v-if="$v.agree.$error"
+        >{{ 'MessageAcceptRules' | localize }}</small>
       </p>
     </div>
     <div class="card-action">
