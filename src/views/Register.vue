@@ -60,7 +60,6 @@
       <p>
         <label>
           <input type="checkbox" v-model="agree" />
-          <span>{{$v.agree}}</span>
           <span>{{ 'AcceptRules' | localize }}</span>
         </label>
         <br />
